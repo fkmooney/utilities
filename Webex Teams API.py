@@ -29,7 +29,7 @@ for room in rooms:
 ### pull messages from a conversation (aka a room)
 """
 try:
-    messages = api.messages.list(roomId="Y2lzY29zcGFyazovL3VzL1JPT00vY2FiYWQzNGEtYmM3ZS0zNjkwLWJiMDYtOGFjMDcwY2ZhMTI0")
+    messages = api.messages.list(roomId="paste_room_id_here")
 except ApiError as e:
     print(e)
 
@@ -52,6 +52,6 @@ print(list(teams)) # list of rooms and attributes
 ###############################################
 # send message to person by email
 
-#api.messages.create(toPersonEmail="michial.miller@npd.com",text="Test Message")
+#api.messages.create(toPersonEmail="person@email.com",text="Test Message")
 
 
