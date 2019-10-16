@@ -4,7 +4,7 @@ from webexteamssdk import WebexTeamsAPI, ApiError
 import json
 
 ### get token here https://developer.webex.com/docs/api/getting-started/accounts-and-authentication
-kempton_at = "NjMyZmIwNTAtMjBlNC00NjgyLTkyN2MtM2VjMDlkMWUxMDA0ODViYjY2NmMtZDkw_PF84_9111cd88-67b1-44d9-a475-e716faaad1e5"
+kempton_at = "put_token_here"
 api = WebexTeamsAPI(access_token=kempton_at)
 
 ################################################
