@@ -1,0 +1,5 @@
+Scheduling file to be run is located here: C:\ProgramData\Python\batch_files_KM
+
+The file format is bat.
+
+Task is scheduled to run in app called Task Scheduler
