@@ -10,6 +10,6 @@ def read_big_file(filename):
          		print(line)
          		break
 
-f = "AMZ-bookscan-weekly-37.json"  # amazon json file name
+f = "bookscan-weekly-37.json"  # json file name
 
 read_big_file(f) 
