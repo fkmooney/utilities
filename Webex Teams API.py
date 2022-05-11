@@ -5,7 +5,7 @@ import json
 
 ### get token here https://developer.webex.com/docs/api/getting-started/accounts-and-authentication
 kempton_at = "put_token_here"
-api = WebexTeamsAPI(access_token=kempton_at)
+api = WebexTeamsAPI(access_token=xxxxxxxxx)
 
 ################################################
 ### get info about me
