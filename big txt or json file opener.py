@@ -3,10 +3,15 @@
 
 def read_big_file(filename):
     with open(filename, "r") as _file:
-         for line in _file:
-             print(line)
+        count = 0
+        
+        for line in _file: 
+            if count < 30:
+                print(line)
+                count = count + 1
+            else: 
+                break
 
-f = "C:/Users/Kempton Mooney/Desktop/bookscan_weekly.json"  # amazon json file name
 
-
+f = "AMZ-bookscan-weekly-13.json"  # amazon json file name
 read_big_file(f) 
