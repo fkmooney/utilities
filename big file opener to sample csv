@@ -1,0 +1,31 @@
+### This can be used to open big files and then save a limited sample as a csv. 
+
+from io import StringIO
+from csv import writer 
+import pandas as pd
+
+output = StringIO()
+csv_writer = writer(output)
+
+def read_big_file(filename):
+    
+    with open(filename, "r") as _file:
+        count = 0
+        
+        for line in _file: 
+            if count < 300:
+                print(line)
+                row = [line]
+                csv_writer.writerow(row)
+                
+                count = count + 1
+            else: 
+                break
+
+
+f = "file_to_open.csv"  #  file name
+read_big_file(f) 
+
+output.seek(0) # we need to get back to the start of the BytesIO
+df = pd.read_csv(output, header=None)
+df.to_csv('output.csv')
